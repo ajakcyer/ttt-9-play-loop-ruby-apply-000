@@ -38,11 +38,10 @@ end
 # Define your play method below
 
 def play(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
- while valid_move?(board, index)
+  index = 0
+ while index <= 8
   turn(board)
+  index += 1
  end
 end
 
